@@ -26,7 +26,7 @@ NEXT_PUBLIC_contractId=ac-proxy.[YOUR_NEAR_ACCOUNT_ID (from above)]
 # including this will give you a fixed account every time, remove for production use as each TEE should boot with a new ephemeral NEAR account ID
 ENTROPY=foobar
 # do not change the api codehash, this is the shade-agent-api
-API_CODEHASH=1ca34018bc387177d648376db7f86e09ee650421df0513d77ed5fe90d0e87b4d
+API_CODEHASH=1952010c00a8b59bc91d9fe3429f45cb97003e67d6dade554dac7231caa65ab5
 # SANDBOX: this will update automatically each time you deploy to Phala with a new image of your app pushed to docker hub
 APP_CODEHASH=e25f360bca7ebc6822536d9af2ce926582277e54f37e8c0855bccbf74aac1731
 # SANDBOX: what is the docker tag of your app? used for sandbox deployments on Phala
