@@ -14,15 +14,15 @@ Create `.env.development.local` in root.
 
 Note:
 
--   Proxy Contract == local development e.g. yarn dev/start and testing against shade-agent-api running on your machine (NOT A TEE)
--   Sandbox Contract == remote deployment to Phala Cloud, running in a TEE
+-   ac-proxy.[YOUR_NEAR_ACCOUNT_ID] == local development e.g. yarn dev/start and testing against shade-agent-api running on your machine (NOT A TEE)
+-   ac-sandbox.[YOUR_NEAR_ACCOUNT_ID] == remote deployment to Phala Cloud, running in a TEE
 
 ```bash
 # get this from cargo-near or near-cli-rs
 NEAR_ACCOUNT_ID=...
 NEAR_SEED_PHRASE="..." # will need quotes around seed phrase
 # ac-proxy is running locally so you can use yarn dev/start and test your app against the locally running shade agent api
-NEXT_PUBLIC_contractId=ac-proxy.[NEAR_ACCOUNT_ID (from above)]
+NEXT_PUBLIC_contractId=ac-proxy.[YOUR_NEAR_ACCOUNT_ID (from above)]
 # including this will give you a fixed account every time, remove for production use as each TEE should boot with a new ephemeral NEAR account ID
 ENTROPY=foobar
 # do not change the api codehash, this is the shade-agent-api
@@ -39,7 +39,7 @@ PHALA_API_KEY=...
 
 ```bash
 # in Terminal 1
-shade-agent-js
+yarn cli
 # in Terminal 2
 yarn start
 ```
