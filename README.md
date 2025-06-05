@@ -6,6 +6,8 @@ This repo is the most simple example of a docker app that can test the Shade Age
 
 ```
 yarn
+# install the shade-agent-cli globally
+npm i -g @neardefi/shade-agent-cli
 ```
 
 Create `.env.development.local` in root.
@@ -39,7 +41,7 @@ PHALA_API_KEY=...
 
 ```bash
 # in Terminal 1
-yarn cli
+yarn shade-agent-cli
 # in Terminal 2
 yarn start
 ```
