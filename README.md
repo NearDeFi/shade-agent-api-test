@@ -4,11 +4,20 @@ This repo is the most simple example of a docker app that can test the Shade Age
 
 ## Installation
 
+#### The basics
+
 ```
 yarn
+
 # install the shade-agent-cli globally
 npm i -g @neardefi/shade-agent-cli
 ```
+
+#### Install near-cli-rs
+
+Follow instructions for your platform here: https://github.com/near/near-cli-rs
+
+#### Create your env file
 
 Create `.env.development.local` in root.
 
