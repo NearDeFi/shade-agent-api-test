@@ -66,7 +66,7 @@ PHALA_API_KEY=...
 
 ```bash
 # in Terminal 1
-yarn shade-agent-cli
+shade-agent-cli
 # in Terminal 2
 yarn start
 ```
