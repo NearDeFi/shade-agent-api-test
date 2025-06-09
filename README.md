@@ -92,7 +92,7 @@ DOCKER_TAG
 PHALA_API_KEY
 ```
 
-In your ENV file use ac-sanbox for your contract:
+In your ENV file use `ac-sanbox` for your contract:
 
 `NEXT_PUBLIC_contractId=ac-sandbox.[YOUR_NEAR_ACCOUNT_ID]`
 
