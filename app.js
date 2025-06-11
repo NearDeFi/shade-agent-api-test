@@ -5,21 +5,21 @@ import { createHash } from 'node:crypto';
 
 const PORT = 3000;
 
-import { getWorkerAccount, signWithWorker } from '@neardefi/shade-agent-js';
+import { getAgentAccount, signWithAgent } from '@neardefi/shade-agent-js';
 
 const app = new Hono();
 
 app.use('/*', cors());
 
 app.get('/api/address', async (c) => {
-    const res = await getWorkerAccount();
+    const res = await getAgentAccount();
 
     return c.json(res);
 });
 
 app.get('/api/test-sign', async (c) => {
     const path = 'foo';
-    const res = await signWithWorker(path, [
+    const res = await signWithAgent(path, [
         ...(await createHash('sha256').update(Buffer.from('testing'))).digest(),
     ]);
 

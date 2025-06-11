@@ -65,6 +65,8 @@ PHALA_API_KEY=...
 
 ## Running Locally
 
+**Note:** when you see `Password:` in your terminal, it is asking for your `sudo` password to run docker commands.
+
 ```bash
 # in Terminal 1
 shade-agent-cli
