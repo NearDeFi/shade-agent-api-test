@@ -46,7 +46,7 @@ NEAR_SEED_PHRASE="..." # will need quotes around seed phrase
 # ac-proxy is running locally so you can use yarn dev/start and test your app against the locally running shade agent api
 NEXT_PUBLIC_contractId=ac-proxy.[YOUR_NEAR_ACCOUNT_ID (from above)]
 # do not change the api codehash, this is the shade-agent-api
-API_CODEHASH=1952010c00a8b59bc91d9fe3429f45cb97003e67d6dade554dac7231caa65ab5
+API_CODEHASH=ec43db0f65f8e05937df2a5810931e6d9f491c5df34013b8f9838129c32a3fcf
 
 # FOR PHALA DEPLOYMENTS
 

@@ -10,7 +10,7 @@ services:
             SHADE_AGENT_PORT: ${SHADE_AGENT_PORT}
         platform: linux/amd64 # Explicitly set for TDX
         # shade-agent-api-image
-        image: mattdlockyer/shade-agent-api@sha256:9c6e8bac533d3643cf9eeed49a301236208b66fc246fe9230650c285d4820e8b
+        image: mattdlockyer/shade-agent-api@sha256:ec43db0f65f8e05937df2a5810931e6d9f491c5df34013b8f9838129c32a3fcf
         container_name: shade-agent-api
         ports:
             - '3140:3140'
