@@ -6,7 +6,6 @@ services:
             NEAR_SEED_PHRASE: ${NEAR_SEED_PHRASE}
             API_CODEHASH: ${API_CODEHASH}
             APP_CODEHASH: ${APP_CODEHASH}
-            ENTROPY: ${ENTROPY}
             NEXT_PUBLIC_contractId: ${NEXT_PUBLIC_contractId}
             SHADE_AGENT_PORT: ${SHADE_AGENT_PORT}
         platform: linux/amd64 # Explicitly set for TDX
