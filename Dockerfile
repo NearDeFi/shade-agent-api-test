@@ -15,7 +15,7 @@ COPY .yarn ./.yarn
 RUN yarn install
 
 # Copy application files
-COPY . .
+COPY app.js .
 
 # Set non-root user for security
 RUN chown -R node:node /app
